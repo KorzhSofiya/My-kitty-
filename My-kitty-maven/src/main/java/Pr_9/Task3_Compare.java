@@ -16,10 +16,7 @@ public class Task3_Compare {
     //anon
     List<Ticket> tickets = new ArrayList<>(List.of(new Ticket(1, LocalDate.now().minusDays(3)),
             new Ticket(2, LocalDate.now().minusDays(2)), new Ticket(3, LocalDate.now().minusDays(3))));
-    tickets.sort(new Comparator<Ticket>){
-        @Override
-                public int compare(Ticket t1, Ticket )
-    }
+
     //method reference
     public static final Comparator<Ticket> BY_PRIORITY = Comparator.comparingInt(Ticket::getPriority);
     public static final Comparator<Ticket> BY_CREATED_AT = Comparator.comparing(Ticket::getCreatedAt);
