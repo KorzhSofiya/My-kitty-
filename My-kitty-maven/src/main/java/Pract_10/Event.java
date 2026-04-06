@@ -1,8 +1,12 @@
 package Pract_10;
 
+import lombok.*;
+
 import java.time.*;
 
 
+@AllArgsConstructor
+@Getter
 public class Event {
     private String title;
     private LocalDateTime start;
